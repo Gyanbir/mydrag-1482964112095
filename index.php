@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PHP Starter Application</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-	<table>
-		<tr>
-			<td style='width: 30%;'>
-				<img class = 'newappIcon' src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<h1 id = "message"><?php echo "Hello World!"; ?></h1>
-				<p class='description'></p> Thanks for creating a <span class="blue">PHP Starter Application</span>.
-			</td>
-		</tr>
-	</table>
-</body>
-</html>
+<?php
+
+$PageTitle="Prediction Engine - Home Page";
+
+include_once('header.php');
+?>
+
+	<div id="login">
+		<h1><strong>Login to Prediction Engine!</h1>
+		<?php
+		if ($_GET['err']) {
+		?>
+		<div><font color="red">Invalid Username and Password!</font></div>
+		<?php
+		}
+		?>
+		
+		<form action="login.php" method="post">
+			<fieldset>
+				<p><input type="text" name="username" value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p>
+				<p><input type="password" name="password" value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p>
+				<!--<p><a href="#">Forgot Password?</a></p>-->
+				<p><input type="submit" value="Login"></p>
+			</fieldset>
+		</form>	
+	</div> <!-- end login -->
+
+<?php
+include_once('footer.php');
+?>

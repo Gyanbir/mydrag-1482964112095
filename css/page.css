@@ -1,0 +1,197 @@
+body {
+    color: #2d2d2d;
+    font-family: "proxima-nova-n4","proxima-nova",helvetica,arial,sans-serif;
+    font-size: 90%;
+    font-style: normal;
+    font-weight: 400;
+}
+a { text-decoration: none; }
+h1 { font-size: 1em; }
+h1, p {
+	margin-bottom: 10px;
+}
+strong {
+	font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+#login {
+	margin: 50px auto;
+	width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+	background-color: #e5e5e5;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #5a5656;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 50px;
+	outline: none;
+	padding: 0px 10px;
+	width: 280px;
+	-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+	background-color:  #716967;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	height: 50px;
+	text-transform: uppercase;
+	width: 300px;
+	-webkit-appearance:none;
+}
+form fieldset a {
+	color: #5a5656;
+	font-size: 10px;
+}
+form fieldset a:hover { text-decoration: underline; }
+
+/* new css for headers etc*/
+.container {
+	max-width:970px;
+	margin:0 auto;
+	padding:0 15px;
+}
+
+#header {
+	background: #837d7c;
+	min-height:10px;
+	padding:27px 0;
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	-webkit-transition: all 0.3s ease-out;	transition: all 0.3s ease-out;
+	z-index:101;
+}
+
+#header .logo {
+	float:left;
+	width:250px;
+	height:35px;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(../images/fragomenlogo.png) no-repeat;
+	margin:0 17px 0 0;
+	background-size:100% auto;
+	-webkit-transition: all 0.3s ease-out;	transition: all 0.3s ease-out;
+}
+
+#header .logo a {
+	display:block;
+	height:100%;
+}
+
+#main-nav {
+	float:left;
+	padding:32px 0 0;
+	-webkit-transition: all 0.3s ease-out;	transition: all 0.3s ease-out;
+}
+
+#header .container {max-width:1170px;}
+#header.sticky #main-nav {padding-top: 14px;}
+#main-nav > ul > li {
+	float:left;
+	margin:0px 0px 0px 12px;
+	position:relative;
+}
+#main-nav > ul > li > a {
+	color:#fff;
+	text-transform:uppercase;
+	font:16px/23px 'goodbylullaby', Helvetica, sans-serif;
+	padding:6px 24px 6px 16px;
+	position:relative;
+	text-decoration:none;
+	float:left;
+}
+
+#header .login-links {
+	color: white;
+    float: left;
+    font: 30px/40px "sassy_molassy",sans-serif;
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px 250px 0px 150px;
+    transition: all 0.3s ease 0s;
+}
+#header .login-sub-links {
+	color: white;
+    float: left;
+    font: 18px/20px "sassy_molassy",sans-serif;
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px 0px 0px 40px;
+    transition: all 0.3s ease 0s;
+}
+#header .login-top-links {
+	color: white;
+    float: left;
+    font: 14px/16px "sassy_molassy",sans-serif;
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px 40px 10px 80px;
+    transition: all 0.3s ease 0s;
+}
+
+#box-table-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	width: 80%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #aabcfe; 
+}
+#box-table-a th
+{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: grey;
+	border-top: 1px solid #aabcfe;
+	border-bottom: 1px solid #aabcfe;
+	color: white;
+}
+#box-table-a td
+{
+	padding: 8px;
+	background: #dddddd; 
+	border-bottom: 1px solid #aabcfe;
+	color: black;
+	border-top: 1px solid transparent;
+}
+#box-table-a tr:hover td
+{
+	background: #d0dafd;
+	color: #339;
+}
+section {
+    width: 100%;
+    height: 200px;    
+    margin: auto;
+    padding: 130px 10px 40px 10px;
+}
+div#one {
+    width: 55%;
+    height: 200px;
+    background: white;
+    float: left;
+}
+div#two {
+    margin-left: 35%;
+    height: 200px;
+    background: white;
+}
+
+div#three {
+    padding-top: 190px;
+}
